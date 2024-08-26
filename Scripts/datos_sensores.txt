@@ -1,0 +1,21 @@
+2024-08-23 14:29:46, Temperatura: 21.10°C, Humedad: 50.30%, Latitud: 4.626891, Longitud: -74.063861, Altitud: 2667.3, Distancia: 16.17 cm, Porcentaje de llenado: 19.15%
+2024-08-23 14:29:59, Temperatura: 21.10°C, Humedad: 50.40%, Latitud: 4.626891, Longitud: -74.063861, Altitud: 2667.3, Distancia: 6.71 cm, Porcentaje de llenado: 66.45%
+2024-08-23 14:30:11, Temperatura: 21.10°C, Humedad: 50.30%, Latitud: 4.626891, Longitud: -74.063861, Altitud: 2667.3, Distancia: 6.9 cm, Porcentaje de llenado: 65.50%
+2024-08-23 14:30:23, Temperatura: 21.10°C, Humedad: 50.30%, Latitud: 4.626891, Longitud: -74.063861, Altitud: 2667.3, Distancia: 7.85 cm, Porcentaje de llenado: 60.75%
+2024-08-23 14:41:08, Temperatura: 21.10°C, Humedad: 50.60%, Latitud: 4.626655, Longitud: -74.064341, Altitud: 2664.4, Distancia: 6.55 cm, Porcentaje de llenado: 67.25%
+2024-08-23 14:41:16, Temperatura: 21.10°C, Humedad: 50.50%, Latitud: 4.626655, Longitud: -74.064341, Altitud: 2664.4, Distancia: 8.7 cm, Porcentaje de llenado: 56.50%
+2024-08-23 14:41:23, Temperatura: 21.20°C, Humedad: 50.50%, Latitud: 4.626655, Longitud: -74.064341, Altitud: 2664.4, Distancia: 10.09 cm, Porcentaje de llenado: 49.55%
+2024-08-23 14:47:45, Temperatura: 24.80°C, Humedad: 69.90%, Latitud: 4.626685, Longitud: -74.06452, Altitud: 2684.9, Distancia: 3.28 cm, Porcentaje de llenado: 83.60%
+2024-08-23 14:47:52, Temperatura: 25.30°C, Humedad: 85.30%, Latitud: 4.626685, Longitud: -74.06452, Altitud: 2684.9, Distancia: 6.6 cm, Porcentaje de llenado: 67.00%
+2024-08-23 14:47:59, Temperatura: 26.10°C, Humedad: 92.10%, Latitud: 4.626685, Longitud: -74.06452, Altitud: 2684.9, Distancia: 15.15 cm, Porcentaje de llenado: 24.25%
+2024-08-23 14:48:06, Temperatura: 26.90°C, Humedad: 94.60%, Latitud: 4.626685, Longitud: -74.06452, Altitud: 2684.9, Distancia: 17.28 cm, Porcentaje de llenado: 13.60%
+2024-08-23 14:48:14, Temperatura: 27.60°C, Humedad: 94.70%, Latitud: 4.626685, Longitud: -74.06452, Altitud: 2684.9, Distancia: 21.22 cm, Porcentaje de llenado: 6.10%
+
+2024-08-24 15:46:16, Temperatura: 24.70°C, Humedad: 44.60%, Latitud: 4.697551, Longitud: -74.065551, Altitud: 2591.5, Distancia: 5.33 cm, Porcentaje de llenado: 73.35%
+2024-08-24 15:46:23, Temperatura: 24.80°C, Humedad: 44.60%, Latitud: 4.697551, Longitud: -74.065551, Altitud: 2591.5, Distancia: 12.19 cm, Porcentaje de llenado: 39.05%
+2024-08-24 15:50:20, Temperatura: 24.50°C, Humedad: 45.00%, Latitud: 4.697406, Longitud: -74.06544, Altitud: None, Distancia: 4.07 cm, Porcentaje de llenado: 79.65%
+2024-08-24 15:50:27, Temperatura: 24.60°C, Humedad: 45.10%, Latitud: 4.697406, Longitud: -74.06544, Altitud: None, Distancia: 7.51 cm, Porcentaje de llenado: 62.45%
+
+2024-08-24 21:48:32, Temperatura: 20.30°C, Humedad: 51.50%, Latitud: 4.69741, Longitud: -74.065396, Altitud: None, Distancia: 173.36 cm, Porcentaje de llenado: -766.80%
+2024-08-24 21:48:43, Temperatura: 20.30°C, Humedad: 51.60%, Latitud: 4.69741, Longitud: -74.065396, Altitud: None, Distancia: 173.35 cm, Porcentaje de llenado: -766.75%
+2024-08-24 21:48:53, Temperatura: 20.30°C, Humedad: 51.50%, Latitud: 4.69741, Longitud: -74.065396, Altitud: 2593.4, Distancia: 172.87 cm, Porcentaje de llenado: -764.35%
