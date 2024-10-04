@@ -1,0 +1,1 @@
+Esta carpeta tienen códigos del envío de datos desde un archivo de txt y el que se inicia automáticamente al hacer el envío a ThingSpeak
