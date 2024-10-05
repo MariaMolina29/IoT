@@ -136,12 +136,12 @@ try:
                 file.write(f"Porcentaje de llenado: {porcentaje_lleno:.2f}%\n")
 
             # Enviar datos a ThingSpeak
-            enviar_datos_thingspeak("field1", temperatura, "DHT22", fecha_hora, "°C")
-            enviar_datos_thingspeak("field2", humedad, "DHT22", fecha_hora, "%")
-            enviar_datos_thingspeak("field3", latitud, "GPS", fecha_hora, "°")
-            enviar_datos_thingspeak("field4", longitud, "GPS", fecha_hora, "°")
-            enviar_datos_thingspeak("field5", altitud if altitud != 'None' else 0, "GPS", fecha_hora, "m")
-            enviar_datos_thingspeak("field6", porcentaje_lleno, "Ultrasonic", fecha_hora, "%")
+            enviar_datos_thingspeak("field1", temperatura, "DHT22", fecha_hora, "Celsius")
+            enviar_datos_thingspeak("field2", humedad, "DHT22", fecha_hora, "Percentage")
+            enviar_datos_thingspeak("field3", latitud, "GPS", fecha_hora, "Degrees")
+            enviar_datos_thingspeak("field4", longitud, "GPS", fecha_hora, "Degrees")
+            enviar_datos_thingspeak("field5", altitud if altitud != 'None' else 0, "GPS", fecha_hora, "Minutes")
+            enviar_datos_thingspeak("field6", porcentaje_lleno, "Ultrasonic", fecha_hora, "Percentage")
 
         # Esperar antes de la próxima lectura
         time.sleep(8)
