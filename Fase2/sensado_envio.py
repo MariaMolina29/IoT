@@ -33,7 +33,7 @@ V = A * H / 1000  # Volumen total del tanque en litros
 mqtt_client_ID = "KQURJjcKHwUKFzodEhADDQQ"
 mqtt_username = "KQURJjcKHwUKFzodEhADDQQ"
 mqtt_password = "UFfOYXaeGhxQ69V1OlnC2rmY"
-channel_id = "2679274"  # Cambia esto por el ID de tu canal
+channel_id = "2679274"  #ID de tu canal
 mqtt_host = "mqtt3.thingspeak.com"
 topic = f"channels/{channel_id}/publish"
 
