@@ -1,0 +1,654 @@
+/* Definición de variables CSS para colores globales */
+:root {
+    /* Colores principales */
+    --steel-blue: #3b99d9;
+    --steel-blue-2: #2e80b6;
+    --dark-khaki: #a8d069;
+    --medium-sea-green: #30ad64;
+    --light-sea-green: #25ccb5;
+    --light-sea-green-2: #20ac99;
+    
+    /* Colores adicionales */
+    --sandy-brown: #f8c740;
+    --goldenrod: #e2a62b;
+    --khaki: #face6a;
+    --sandy-brown-2: #e4b962;
+    --salmon: #fd7072;
+    --indian-red: #cf404d;
+    
+    /* Tonos gris y marrón */
+    --tan: #d3998a;
+    --dim-gray: #735260;
+    --indian-red-2: #af4173;
+    --brown: #822e50;
+    --tomato: #e64c40;
+    --firebrick: #bf3a30;
+    --salmon-2: #fc7d64;
+    
+    /* Tonos blanco y plateado */
+    --white-smoke: #ecf0f1;
+    --silver: #bec3c7;
+    --dim-gray-2: #49647b;
+    --dark-slate-gray: #2d3e4f;
+    --dark-slate-gray-2: #404047;
+    --white-smoke-2: #f0f0f0;
+    --white-smoke-3: #edeff2;
+    
+    /* Otros colores */
+    --cadet-blue: #668cad;
+    --pale-turquoise: #bfe0ff;
+    --light-sky-blue: #69b9ff;
+    --dodger-blue: #2e9dff;
+    --black: #192024;
+    --dim-gray-3: #676770;
+    --light-slate-gray: #8e8e9c;
+}
+
+/* Estilos globales para body y html */
+body, html {
+    color: #6a859c;               /* Color del texto */
+    background-color: #edeff2;    /* Color de fondo */
+    font-family: Open Sans, sans-serif; /* Fuente principal */
+    font-size: 16px;              /* Tamaño de fuente base */
+    line-height: 20px;            /* Altura de línea */
+    margin: 0;                    /* Eliminar márgenes */
+    padding: 0;                   /* Eliminar rellenos */
+    height: 100%;                 /* Altura completa */
+    scroll-behavior: smooth;       /* Desplazamiento suave */
+}
+
+/* Estilos para diferentes niveles de encabezados */
+h1 {
+    margin-top: 0;
+    margin-bottom: 0px;
+    font-size: 38px;    /* Tamaño del título */
+    font-weight: 700;   /* Grosor del texto */
+}
+
+h2 {
+    color: #676770;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+h3 {
+    color: #69b9ff;
+    letter-spacing: 3px;          /* Espaciado entre letras */
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 25px;
+}
+
+h4 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+h5 {
+    color: #676770;
+    letter-spacing: 4px;
+    text-transform: uppercase;     /* Texto en mayúsculas */
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 20px;
+}
+
+h6 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 18px;
+}
+
+/* Estilos para párrafos */
+p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 25px;
+}
+
+/* Estilos de la imagen del logo */
+.logo {
+    width: 70px;
+    height: auto;
+    margin-left: 0;    /* Quita el margen izquierdo */
+    margin-top: 0;     /* Quita el margen superior */
+}
+
+/* Enlace de la marca */
+.brand-link {
+    display: block;    /* Cambiar de flex a block para evitar problemas de alineación */
+    padding: 0;        /* Eliminar padding que pueda mover la imagen */
+}
+
+/* Estilo para los botones */
+.button {
+    color: #fff;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background-color: #69b9ff;
+    border-radius: 4px;         /* Bordes redondeados */
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 21px;
+    text-decoration: none;
+    transition: background-color .3s;
+    display: inline-block;
+}
+
+/* Efectos hover para botones */
+.button:hover {
+    background-color: #2e9dff;
+}
+
+/* Estilo para el botón activo */
+.button.w--current {
+    background-color: #2e80b6;
+}
+
+/* Botón a pantalla completa */
+.button.full-width {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    display: block;
+}
+
+/* Estilos de los botones de pestañas */
+.button.tab {
+    background-color: #92a0ad;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+/* Efectos hover y activos para pestañas */
+.button.tab:hover, .button.tab.w--current {
+    background-color: #2e80b6;
+}
+
+/* Estilo para enlaces de navegación */
+.navigation-link {
+    color: #676770;
+    transition: all .3s ease-in-out;
+}
+
+/* Hover en enlaces de navegación */
+.navigation-link:hover {
+    color: #2e9dff;
+}
+
+/* Estilo de la barra de navegación */
+.navigation-bar {
+    background-color: #fff;
+}
+
+/* Estilo para el texto de la marca */
+.brand-text {
+    font-size: 40px;           /* Tamaño del texto */
+    color: #87CEFA;            /* Color azul claro */
+    font-weight: bold;
+    text-transform: uppercase; /* Mayúsculas */
+    text-align: center;
+    text-decoration: none;      /* Sin subrayado */
+    display: inline-block;
+}
+
+/* Sección principal con fondo blanco */
+.section {
+    text-align: center;
+    background-color: #fff;
+    padding: 80px 10px;
+    position: relative;
+}
+
+/* Sección con color de acento */
+.section.accent {
+    background-color: #69b9ff;
+}
+
+/* Clase w-row para filas de columnas */
+.w-row {
+    display: flex;               /* Flexbox para organizar las columnas */
+    justify-content: space-between;  /* Espacio igual entre las columnas */
+    align-items: stretch;        /* Estira las columnas verticalmente */
+    gap: 30px;                   /* Espacio entre columnas */
+    margin-top: 30px;            /* Margen superior */
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+/* Estilo para cada columna */
+.w-col {
+    flex: 0 0 250px;             /* Ancho fijo de las columnas */
+    max-width: 250px;            /* Ancho máximo de las columnas */
+    box-sizing: border-box;      /* Incluye el padding y el border en el tamaño */
+}
+
+/* Caja blanca para elementos */
+.white-box {
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #dcebf7;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+/* Caja transparente */
+.white-box.transparent {
+    background-color: #0000;    /* Transparente */
+    border-style: none;
+}
+
+
+/* Estilos para la sección del héroe */
+.hero-section {
+    padding-top: 242px;
+    padding-bottom: 242px;
+    background-color: #add8e6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+/* Sección del héroe con imagen de fondo */
+.hero-section.centered {
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(#2e9dff80, #2e9dff38), url('planta.jpeg');
+    background-position: 0 0, 50%;
+    background-size: auto, cover;
+    border-bottom: 4px solid #69b9ff;
+    padding-top: 195px;
+    padding-bottom: 195px;
+}
+
+/* Título dentro de la sección héroe */
+.hero-heading {
+    color: #fff;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    line-height: 60px;
+    font-size: 75px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Subtítulo en la sección héroe */
+.hero-subheading {
+    color: #ecf0f1;
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 40px;
+    text-align: center;
+    max-width: 800px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Botón con borde */
+.hollow-button {
+    color: #fff;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px 30px;
+    font-weight: 300;
+    line-height: 21px;
+    text-decoration: none;
+    transition: background-color .3s, border .3s, color .3s;
+    display: inline-block;
+}
+
+/* Hover para botones con borde */
+.hollow-button:hover {
+    color: #2e9dff;
+    border-color: #2e9dff;
+}
+
+/* Botón con texto en mayúsculas */
+.hollow-button.all-caps {
+    text-transform: uppercase;
+}
+
+/* Encabezado de la sección */
+.section-heading {
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+/* Encabezado centrado */
+.section-heading.centered {
+    color: #676770;
+    text-align: center;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.section-heading.centered.white {
+    color: #fff;
+}
+
+/* Subtítulo centrado */
+.section-subheading.center {
+    color: #8e8e9c;
+    text-align: center;
+    max-width: 700px;
+    letter-spacing: 3px;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 2;
+    margin-bottom: 10px;
+}
+
+.section-subheading.center.off-white {
+    color: #e8e8e8;
+    padding-bottom: 0;
+}
+
+/* Contenedor del título y subtítulo */
+.section-title-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+    margin-bottom: 40px; 
+    height: 100%;
+}
+
+/* Estilos del pie de página */
+.footer {
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+/* Pie de página centrado */
+.footer.center {
+    text-align: center;
+    background-color: #383838;
+    border-top: 1px solid #dbdbdb;
+}
+
+.footer-text {
+    color: #9e9e9e;
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+
+/* Enlace del pie de página */
+.footer-link {
+    color: #668cad;
+    border-bottom: 1px solid #d5d5e0;
+    margin-bottom: 6px;
+    padding-bottom: 10px;
+    font-size: 14px;
+    font-weight: 300;
+    text-decoration: none;
+    display: block;
+}
+
+/* Hover en enlaces del pie de página */
+.footer-link:hover {
+    color: #3498db;
+}
+
+/* Organización en columna para redes sociales */
+.footer-link-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* Estilo para pestañas */
+.w-tab-pane {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    background-color: white;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.w-tab-pane img {
+    max-width: 100%;
+    height: auto;
+}
+
+.w-tab-pane h2 {
+    color: #003366;
+    margin-bottom: 20px;
+    text-align: center;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1;
+}
+
+/* Menú de pestañas */
+.tab-menu {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Imagen de ancho completo */
+.fullwidth-image {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* Texto blanco */
+.white-text {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+/* Contenedor principal con máximo ancho */
+.w-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Contenedor para la barra de navegación */
+.navbar .w-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Estilo para el texto de la marca */
+.brand-text {
+    font-size: 32px;
+    color: #3498db;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Menú de navegación */
+.navigation-menu {
+    display: flex;
+    gap: 20px;
+}
+
+/* Estilo para enlaces en el menú */
+.navigation-link {
+    font-size: 16px;
+    color: #666;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Estilo para el enlace activo */
+.navigation-link.w--current {
+    color: #3498db;
+}
+
+/* Hover en enlaces de navegación */
+.navigation-link:hover {
+    color: #3498db;
+}
+
+/* Botón hamburguesa (navegación móvil) */
+.hamburger-button {
+    display: none;
+}
+
+/* Media queries para pantallas pequeñas */
+@media screen and (max-width: 991px) {
+    .navigation-link {
+        color: #ffffff85;
+    }
+    
+    .navigation-link.w--current {
+        color: #fff;
+    }
+
+    .hero-section.centered {
+        padding-top: 144px;
+        padding-bottom: 144px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .button.full-width {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .button.tab {
+        font-size: 12px;
+    }
+
+    .brand-link {
+        justify-content: flex-start; /* Alineación a la izquierda en móviles */
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .button {
+        margin-bottom: 25px;
+    }
+
+    .hero-section.centered {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .section-subheading.center {
+        line-height: 30px;
+    }
+
+    .grid-image {
+        width: 35%;
+    }
+}
+
+/* Estilos del modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.8);
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  max-width: 80%;
+  max-height: 80%;
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#caption {
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  font-size: 18px;
+}
+
+/* Animación para los elementos */
+.animated-element {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Tooltip */
+.tooltip {
+  position: relative;
+  cursor: pointer;
+  border-bottom: 1px dotted #000;
+}
+
+.tooltip::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
+  font-size: 12px;
+  z-index: 10;
+}
+
+.tooltip:hover::after {
+  opacity: 1;
+}

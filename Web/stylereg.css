@@ -1,0 +1,103 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins&display=swap);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(Img/plantafondo.avif);
+}
+
+.Contenedor {
+    background: rgb(79, 178, 190);
+    width: 420px;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    color: #fff;
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+
+h1 {
+    font-size: 36px;
+    text-align: center;
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder {
+    color: #fff; 
+}
+
+/* Mensajes de error */
+.error {
+    color: red;
+    margin-bottom: 16px;
+    font-size: 14px;
+    display: none;
+}
+
+.password-requirements {
+    font-size: 12px;
+    color: #fff; /* Cambiar color a blanco para que sea visible */
+}
+
+/* Botón de registro */
+button.btn {
+    width: 100%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 400;
+    color: #333;
+    transition: background-color 0.3s ease;
+}
+
+button.btn:hover {
+    background-color: #e0e0e0; /* Color de fondo al pasar el ratón */
+}
+
+/* Enlace para usuarios registrados */
+.register-link {
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.register-link p a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.register-link p a:hover {
+    text-decoration: underline;
+}

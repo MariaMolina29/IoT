@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Metadatos esenciales -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FrostShield</title>
+    
+    <!-- Enlace a tu archivo CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-collapse="medium" data-animation="default" data-duration="400" data-easing="ease" role="banner" class="navigation-bar">
+    
+    <!-- Navegación Principal -->
+    <div class="navbar">
+        <div class="w-container navbar-container">
+            <!-- Logo y título de la marca -->
+            <a href="index.html" class="brand-link">
+                <img src="logo.png" alt="FrostShield Logo" class="logo">
+            </a>
+            <h1 class="brand-text">FrostShield</h1>
+            <h3 class="brand-subtext">"Tecnología que cuida tu campo"</h3>
+
+            <!-- Menú de navegación principal -->
+            <nav role="navigation" class="navigation-menu">
+                <a href="index.html" aria-current="page" class="navigation-link w--current">Inicio</a>
+                <a href="Login.html" class="navigation-link">Inicia sesión</a>
+                <a href="registro.html" class="navigation-link">Registrarte</a>
+            </nav>
+
+            <!-- Botón de menú hamburguesa (para móviles) -->
+            <div class="hamburger-button">
+                <div class="w-icon-nav-menu"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección Hero (Encabezado Principal) -->
+    <div class="hero-section centered animated-element">
+        <div class="w-container">
+            <!-- Título de bienvenida -->
+            <h1 class="hero-heading">¡Bienvenido!</h1>
+            <div class="hero-subheading">Únete y descubre nuestra tecnología IoT para proteger tus cultivos de heladas</div>
+            
+            <!-- Botones de llamada a la acción -->
+            <div class="buttons">
+                <a href="Login.html" class="button">Inicia Sesión</a>
+                <a href="registro.html" class="button">Registrar</a>
+                <a href="#FrostShield" class="hollow-button">Conócenos</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección sobre FrostShield -->
+    <div id="FrostShield" class="section centered animated-element">
+        <div class="w-container">
+            <!-- Título de la sección -->
+            <div class="section-title-group">
+                <h2 class="section-heading centered">¿Qué es FrostShield?</h2>
+                <div class="section-subheading center">
+                    FrostShield es un sistema de sensores diseñado para la prevención y monitoreo de posibles heladas, que incorpora 
+                    <span class="tooltip" data-tooltip="Internet of Things: Tecnología que conecta dispositivos para intercambiar datos">IoT</span> 
+                    para proteger la producción de papa frente a los riesgos climáticos.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección de Servicios -->
+    <div class="section accent animated-element">
+        <div class="w-container">
+            <!-- Título de la sección -->
+            <div class="section-title-group">
+                <h2 class="section-heading centered white">Problemática</h2>
+                <div class="section-subheading center off-white">¡Una helada puede destruir meses de trabajo en una sola noche!</div>
+            </div>
+        </div>
+        
+        <!-- Columnas de contenido de la sección servicios -->
+        <div class="w-row">
+            <div class="w-col">
+                <div class="white-box transparent">
+                    <h3 class="white-text">Impacto en tus Cultivos</h3>
+                    <img src="papa.jpg" alt="Impacto en los Cultivos">
+                    <p class="white-text">Las heladas son una de las principales causas de afectación en los cultivos y pasturias en Colombia durante el fenómeno de El Niño, según La República en 2024</p>
+                    <a href="https://www.larepublica.co/economia/minagricultura-reporto-mas-de-23-000-hectareas-de-cultivos-afectadas-por-el-nino" target="_blank" class="hollow-button">Lee más</a>
+                </div>
+            </div>
+
+            <div class="w-col">
+                <div class="white-box transparent">
+                    <h3 class="white-text">Riesgos en tu Economía</h3>
+                    <img src="perdida.jpg" alt="Riesgos Económicos">
+                    <p class="white-text">Los campesinos boyacenses están vendiendo sus cosechas de papa, que les tomó cinco meses producir, a precios extremadamente bajos, según El Tiempo en 2020.</p>
+                    <a href="https://www.eltiempo.com/economia/sectores/cinco-pautas-para-entender-la-crisis-de-los-productores-de-papa-547948" target="_blank" class="hollow-button all-caps">Lee más</a>
+                </div>
+            </div>
+
+            <div class="w-col">
+                <div class="white-box transparent">
+                    <h3 class="white-text">Soluciones Ineficientes</h3>
+                    <img src="campesino.jpg" alt="Soluciones Ineficientes">
+                    <p class="white-text">Los agricultores recurren a estufas, ventiladores, lonas para cubrir las cosechas o, incluso, técnicas ancestrales como el fuego, según yahoo!Noticias en 2019.</p>
+                    <a href="https://es-us.vida-estilo.yahoo.com/finance/noticias/antorchas-para-salvar-cosechas-asi-combaten-las-heladas-los-viticultores-del-norte-de-italia" target="_blank" class="hollow-button all-caps">Lee más</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección sobre Solución FrostShield -->
+    <div class="section">
+        <div class="w-container">
+            <!-- Título de la sección -->
+            <div class="section-title-group">
+                <h2 class="section-heading centered">FrostShield tu Aliado IoT</h2>
+                <div class="section-subheading center">Descubre cómo nuestra solución IoT transforma la manera en que proteges tus cultivos.</div>
+            </div>
+
+            <!-- Menú de pestañas con botones de navegación -->
+            <div class="tab-menu">
+                <a href="#arq" data-w-tab="Tab 1" class="button tab">Características</a>
+                <a href="#di" data-w-tab="Tab 2" class="button tab">Funcionamiento</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contenido de las pestañas -->
+    <div class="w-tab-content">
+        <!-- Pestaña 1: Características -->
+        <div data-w-tab="Tab 1" class="w-tab-pane">
+            <h2>¿Cómo es FrostShield?</h2>
+            <img id="arq" src="arquitectura.png" alt="Arquitectura FrostShield" width="300" onclick="openModal('arquitectura.png', 'Arquitectura FrostShield')">
+        </div>
+
+        <!-- Pestaña 2: Funcionamiento -->
+        <div data-w-tab="Tab 2" class="w-tab-pane">
+            <h2>¿Cómo funciona FrostShield?</h2>
+            <img id="di" src="diagrama.jpg" alt="Diagrama FrostShield" width="300" onclick="openModal('diagrama.jpg', 'Diagrama FrostShield')">
+        </div>
+    </div>
+    <!-- Sección sobre FrostShield -->
+    <div id="FrostShield" class="section centered">
+        <div class="w-container">
+            <div class="section-title-group">
+                <h2 class="section-heading centered">¿Qué ofrece FrostShield?</h2>
+            </div>
+        </div>
+        <div class="w-row">
+            <div class="w-col w-col-4">
+                <div class="white-box">
+                    <h3>Protección de tus Cultivos</h3>
+                    <p>Protección inmediata y efectiva del cultivo al detectar condiciones de heladas, minimizando el riesgo de daños por bajas temperaturas.</p>
+                </div>
+            </div>
+            <div class="w-col w-col-4">
+                <div class="white-box">
+                    <h3>Mejora de la productividad</h3>
+                    <p>Visualización y monitoreo de datos en tiempo real desde cualquier dispositivo conectado a internet, lo que permite gestionar el cultivo sin necesidad de estar presente.</p>
+                </div>
+            </div>
+            <div class="w-col w-col-4">
+                <div class="white-box">
+                    <h3>Prevención de riesgos</h3>
+                    <p>Minimización de los riesgos climáticos mediante la respuesta proactiva y automatizada ante posibles heladas, garantizando una mayor seguridad para los cultivos.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <div class="footer">
+        <div class="w-container">
+            <div class="w-row">
+                <!-- Columna 1: Información de contacto -->
+                <div class="spc w-col">
+                    <h5>Sobre FrostShield</h5>
+                    <p>¿Tienes alguna duda? Contáctanos:</p>
+                    <p>Dirección: Cr.7 Calle 45 Bogotá, Colombia</p>
+                    <p>Teléfono: (+57) 601 328 8420</p>
+                    <p>Correo: frostshield40@gmail.com</p>
+                </div>
+
+                <!-- Columna 2: Enlaces útiles -->
+                <div class="spc w-col">
+                    <h5>Enlaces útiles</h5>
+                    <a href="#" class="footer-link">Guía de Uso del Sistema</a>
+                    <a href="#" class="footer-link">Soporte Técnico</a>
+                    <a href="#" class="footer-link">Preguntas Frecuentes (FAQ)</a>
+                    <a href="#" class="footer-link">Testimonios de Clientes</a>
+                </div>
+
+                <!-- Redes sociales -->
+                <div class="footer-link-wrapper">
+                    <img src="ig.svg" width="20" alt="Instagram Icon">
+                    <a href="#" class="footer-link with-icon">Instagram</a>
+                </div>
+                <div class="footer-link-wrapper">
+                    <img src="face.svg" width="20" alt="Facebook Icon">
+                    <a href="#" class="footer-link with-icon">Facebook</a>
+                </div>
+                <div class="footer-link-wrapper">
+                    <img src="tiktok.svg" width="20" alt="Tiktok Icon">
+                    <a href="#" class="footer-link with-icon">Tiktok</a>
+                </div>
+                <div class="footer-link-wrapper">
+                    <img src="gmail.svg" width="20" alt="Google Icon">
+                    <a href="mailto:frostshield40@gmail.com" class="footer-link with-icon">Gmail</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal para la imagen ampliada -->
+    <div id="imageModal" class="modal" style="display:none;">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div id="caption"></div>
+    </div>
+
+    <!-- Scripts para interacción -->
+    <script>
+    function openModal(imageSrc, altText) {
+      var modal = document.getElementById("imageModal");
+      var modalImg = document.getElementById("modalImage");
+      var captionText = document.getElementById("caption");
+
+      modal.style.display = "block";
+      modalImg.src = imageSrc;
+      captionText.innerHTML = altText;
+    }
+
+    function closeModal() {
+      var modal = document.getElementById("imageModal");
+      modal.style.display = "none";
+    }
+
+    modal.addEventListener('click', function(event) {
+      if (event.target === modal) {
+        closeModal();
+      }
+    });
+    </script>
+
+    <!-- Script para la animación en scroll -->
+    <script>
+    let debounceTimer;
+    window.addEventListener("scroll", function() {
+      clearTimeout(debounceTimer);
+      debounceTimer = setTimeout(function() {
+        var elements = document.querySelectorAll(".animated-element");
+        var screenHeight = window.innerHeight;
+
+        elements.forEach(function(element) {
+          var position = element.getBoundingClientRect().top;
+
+          if (position < screenHeight - 100) {
+            element.classList.add("visible");
+          }
+        });
+      }, 100); 
+    });
+    </script>
+
+    <!-- Script para los tooltips -->
+    <script>
+    document.querySelectorAll('.tooltip').forEach(function(tooltip) {
+      tooltip.addEventListener('mousemove', function(e) {
+        const tooltipText = tooltip.getAttribute('data-tooltip');
+        const tooltipElement = document.createElement('div');
+        tooltipElement.className = 'tooltip-box';
+        tooltipElement.innerText = tooltipText;
+
+        document.body.appendChild(tooltipElement);
+        tooltipElement.style.top = `${e.pageY + 10}px`;
+        tooltipElement.style.left = `${e.pageX + 10}px`;
+      });
+
+      tooltip.addEventListener('mouseleave', function() {
+        const tooltipBox = document.querySelector('.tooltip-box');
+        if (tooltipBox) {
+          tooltipBox.remove();
+        }
+      });
+    });
+    </script>
+</body>
+</html>

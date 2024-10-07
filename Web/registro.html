@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./stylereg.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>Registro de Usuario FrostShield</title>
+    <style>
+        .error {
+            color: red;
+            display: none;
+        }
+        .password-requirements {
+            font-size: 12px;
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="Contenedor">
+        <form id="registroForm" action="register.php" method="POST">
+            <h1>Registro de Usuarios</h1>
+
+            <!-- Nombre de Usuario -->
+            <div class="input-box"> 
+                <input type="text" name="username" placeholder="Nombre de Usuario" required />
+            </div>
+
+            <!-- E-mail de Usuario -->
+            <div class="input-box"> 
+                <input type="email" name="email" id="email" placeholder="E-mail de Usuario" required />
+            </div>
+
+            <!-- Confirmar E-mail -->
+            <div class="input-box"> 
+                <input type="email" name="confirmEmail" id="confirmEmail" placeholder="Confirmar E-mail" required />
+            </div>
+
+            <!-- Edad -->
+            <div class="input-box"> 
+                <input type="number" name="age" placeholder="Edad" />
+            </div>
+
+            <!-- Contraseña -->
+            <div class="input-box"> 
+                <input type="password" name="password" id="password" placeholder="Contraseña (mínimo 8 caracteres y 1 número)" required />
+                <p class="password-requirements">Debe tener al menos 8 caracteres y contener al menos un número.</p>
+            </div>
+
+            <!-- Confirmar Contraseña -->
+            <div class="input-box"> 
+                <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirmar Contraseña" required />
+            </div>
+
+            <!-- Mensajes de error -->
+            <p id="emailError" class="error">Los correos electrónicos no coinciden. Por favor, verifica.</p>
+            <p id="passwordError" class="error">Las contraseñas no coinciden. Por favor, verifica.</p>
+            <p id="passwordInvalidError" class="error">La contraseña debe tener al menos 8 caracteres y contener al menos un número.</p>
+
+            <!-- Botón de registro -->
+            <button type="submit" class="btn">Registrarse</button>
+
+            <!-- Enlace para usuarios registrados -->
+            <div class="register-link">
+                <p>¿Ya tienes una cuenta? <a href=" Login.html ">Entra aquí</a></p>
+            </div>
+
+            <div class="register-link">
+                <p> Regresar al inicio  <a href="index.html "> Presiona aqui !!!</a></p>
+            </div>
+
+        </form>
+    </div>
+
+    <script>
+        // Validaciones del lado del cliente
+        const form = document.getElementById('registroForm');
+        const email = document.getElementById('email');
+        const confirmEmail = document.getElementById('confirmEmail');
+        const password = document.getElementById('password');
+        const confirmPassword = document.getElementById('confirmPassword');
+        const emailError = document.getElementById('emailError');
+        const passwordError = document.getElementById('passwordError');
+        const passwordInvalidError = document.getElementById('passwordInvalidError');
+
+        const passwordRegex = /^(?=.*\d)[a-zA-Z\d]{8,}$/;
+
+        form.addEventListener('submit', function(event) {
+            // Validación de correos electrónicos
+            if (email.value !== confirmEmail.value) {
+                emailError.style.display = 'block';
+                event.preventDefault();
+            } else {
+                emailError.style.display = 'none';
+            }
+
+            // Validación de contraseñas
+            if (password.value !== confirmPassword.value) {
+                passwordError.style.display = 'block';
+                event.preventDefault();
+            } else {
+                passwordError.style.display = 'none';
+            }
+
+            // Validar que la contraseña cumpla los requisitos
+            if (!passwordRegex.test(password.value)) {
+                passwordInvalidError.style.display = 'block';
+                event.preventDefault();
+            } else {
+                passwordInvalidError.style.display = 'none';
+            }
+        });
+    </script>
+
+</body>
+</html>
